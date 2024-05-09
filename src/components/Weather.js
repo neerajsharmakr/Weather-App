@@ -9,8 +9,7 @@ const Weather = () => {
   const [weather, setWeather] = useState("");
   const [error, setError] = useState("");
   const API_key = "5acc1683650652bab831ecf7d57fd397";
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}`;
-
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_key}`;
   const handleChange = (e) => {
     setCity(e.target.value);
   };
